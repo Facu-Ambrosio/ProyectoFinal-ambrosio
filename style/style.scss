@@ -1,0 +1,42 @@
+@import"./colores/colores";
+@import"./media/media";
+@import"./BoxSizing/BoxSizing";
+
+/* coloca botones del nav al final */
+.barra_final {
+    justify-content: end;
+}
+/* color principal header y footer */
+.color {
+    background-color: map-get($map: $colores, $key: footer_header);/* mapa */
+}
+/* aplica flex y alinea titulo de la pagina y logo */
+.titulo_logo {
+    display: flex;
+    align-items: center;
+}
+/* hace un flex en la descripcion y alinea y le da padding y color */
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: map-get($map: $colores, $key: main);/* mapa */
+}
+/* agrega color de fondo a la parte de pedidos */
+.pedidos {
+    background-color: map-get($map: $colores, $key: main);/* mapa */
+}
+/* a el bloque que contiene a la imagen de la descripcion le aplica un flex para ubicarlo en el centro */
+.imagen_flex {
+    display: flex;
+    justify-content: center;
+}
+/* aplica un flex al body y le da la estructura vertical con un alto minimo y color */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: map-get($map: $colores, $key: main);/* mapa */
+}

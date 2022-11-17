@@ -1,0 +1,77 @@
+/* modifica el tamaño del logo */
+.logo {
+    max-width: 20%;
+}
+/* aplica tex-align al texto de la descripcion*/
+.texto_descripcion {
+    text-align: center;
+    width: 85%;
+    padding-bottom: 2%;
+}
+/* saca el margin bottom que viene por defecto en las etiquetas h de bootstrap*/
+body{
+    header{
+        nav{ 
+            div{ 
+                a{ 
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* saca el margin bottom que viene por defecto en las etiquetas h de bootstrap*/
+body{ 
+    header{ 
+        nav{ 
+            div{ 
+                #navbarNav{ 
+                    ul{ 
+                        li{ 
+                            a{
+                                h5 {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* tamaño de las imagenes*/
+.imageMio {
+    max-width: 100%;
+}
+/* saca el margin bottom que viene por defecto en las etiquetas h de bootstrap*/
+h3 {
+    margin-bottom: 0;
+}
+/* cambia el ancho de formularios en la seccion de pedidos */
+#selector{
+    width: 325px;
+}
+/* cambia el ancho de formularios en la seccion de pedidos*/
+#selector2{
+    width: 220px;
+}
+/* reubica el boton de envio de formulario*/
+#boton{
+    padding-top: 1%;
+}
+/* cambia el ancho de formularios en la seccion de pedidos */
+#exampleFormControlInput1{
+    width: 300px;
+}
+/* le agruga al formulario de pedidos un padding para separarlo de la nav bar */
+#formulario{
+    padding-top: 1%;
+}
+main section label h2{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}

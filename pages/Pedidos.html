@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <meta name="description" content="Hola!, soy Loan, soy un ilustrador y dibujante de cómics argentino">
+    <meta name="keywords" content="arte, dibujo, comics, storyboard, layouts">
+    <link rel="shortcut icon" href="../Assets/icono.png">
+    <link rel="stylesheet" href="../bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg color">
+            <div class="container-fluid ">
+                <a class="navbar-brand titulo_logo" href="../index.html">
+                    <h2>
+                        Loan art
+                    </h2>
+                    <img class="logo" src="../Assets/Captura de pantalla 2022-09-29 201215_preview_rev_1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse barra_final" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../index.html">
+                                <h5>Inicio</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/Galeria.html">
+                                <h5>Galeria</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/SobreMi.html">
+                                <h5>Sobre mi</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/Pedidos.html">
+                                <h5>Pedidos</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/Contacto.html">
+                                <h5>Contacto</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main_pedidos">
+        <section id="pedidos">
+            <label for=""><h2>Realice su pedido...</h2></label>
+            <form class="row g-3 needs-validation" novalidate id="formulario">
+                <div class="col-md-4" id="nombre">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                </div>
+                <div class="col-md-4" id="apellido">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                </div>
+                <div class="col-md-4" id="email">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-md-6" id="ciudad">
+                    <label for="validationCustom03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                </div>
+                <div class="col-md-3" id="pais">
+                    <label for="validationCustom03" class="form-label">Pais</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                </div>
+                <div id="dibujo">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="selector">
+                        <option selected>Seleccione el dibujo que desea</option>
+                        <option value="1">15 Días más</option>
+                        <option value="2">Batman Vampire</option>
+                        <option value="3">Desolate Wasteland</option>
+                        <option value="4">Demonios Internos</option>
+                        <option value="5">Social Distance</option>
+                        <option value="6">Healthcare Heroes</option>
+                        <option value="7">An Unexpected Visit</option>
+                        <option value="8">Extraños Sucesos en el Cementerio</option>
+                        <option value="9">The Hand</option>
+                        <option value="10">Muerte Roja</option>
+                        <option value="11">Pizza y alcohol en gel</option>
+                        <option value="12">Principe Prospero</option>
+                    </select>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selector2">
+                        <option selected>Formato y tamaño</option>
+                        <option value="1">Digital</option>
+                        <option value="2">Impreso, Small(10")</option>
+                        <option value="3">Impreso, Medium(20")</option>
+                        <option value="4">Impreso, Large(32")</option>
+                    </select>
+                </div>
+            </form>
+            <div class="col-12" id="boton">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepte los terminos y condiciones
+                    </label>
+                </div>
+            </div>
+            <div class="col-12" id="enviar">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer color">
+        <section id="derechos">
+            <h5>2022, Loan arts ©</h5>
+        </section>
+        <section id="redes">
+            <a href="https://www.instagram.com/loan_art00/" id="ig" alt="instagram">
+                <img src="../Assets/instagram icono.png">
+            </a>
+            <a href="https://www.facebook.com/loan.arts.90" id="fb" alt="facebook">
+                <img src="../Assets/png-transparent-facebook-computer-icons-layout-rectangle-logo-brand.png">
+            </a>
+        </section>
+    </footer>
+    <script src="../bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
