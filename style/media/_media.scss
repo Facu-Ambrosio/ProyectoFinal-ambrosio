@@ -64,29 +64,13 @@
         align-items: center;
         height: auto;
         margin-top: auto;
-    }
-    /* define los tamaños de los iconos de las redes sociales y les quita el text-decoration de los links */
-    #ig {
-        text-decoration: none;
-    }
-    #ig{
-        img {
-            max-width: 6%;
-        }
-    }
-    #fb {
-        img {
-            max-width: 6%;
-        }
-    }
-    /* alinea los iconos de las redes sociales */    
-    #redes {
-        text-align: center;
+        padding: 10px;
     }
     /* quita el margin a los h */
     #derechos{ 
         h5 {
             margin: 0;
+            padding-bottom: 5%;
         }
     }
     /* desactiva la grilla de la galeria de tablet en horizontal y desktop */
@@ -95,8 +79,10 @@
     }
     /* le agrega un padding top y bottom al carousel */
     #carousel {
-        margin-top: 16%;
+        margin-top: 2%;
         margin-bottom: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
     /* agrega color a las letras de los titulos de las imagenes */
     #titulo_fotos_galeria{
@@ -114,6 +100,67 @@
     .imagen_descripcion {
         max-width: 320px;
     }
+    #redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100px;
+        gap: 14%;
+        section{
+            a{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        #red1{
+            width: 40px;
+        }
+        #red2{
+            width: 40px;
+        }
+    }
+    #pedidos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dibujo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #enviar{
+        margin-top: 1%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    #boton{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1%;
+    }
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #email_contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mensaje{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boton_contacto{
+        margin-top: 2%;
+    }
+
 }
 /* media query que le agrega color de fondo a los botones de la nav bar, y cambia el tamaño de los iconos de las redes sociales para que no parezcan tan grandes al cambiar de tamaño d epantalla */
 @media screen and (min-width:992px) {
@@ -121,14 +168,17 @@
         background-color: map-get($map: $colores, $key: botones_nav);
         /* mapa */
     }
-    #ig{ 
-        img {
-            max-width: 3%;
-        }
-    }
-    #fb{ 
-        img {
-            max-width: 3%;
+    body{
+        header{
+            nav{
+                div{
+                    div{
+                        ul{
+                            gap: 25px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -148,7 +198,7 @@
     }
     /* cambia el tamaño de las imagenes del inicio y le da un border radius */
     .imagen_inicio {
-        max-width: 60%;
+        max-width: 75%;
         border-radius: 2%;
     }
     /* define las areas del grid y les aplica un text align */
@@ -182,8 +232,9 @@
             "g10 g11 g12";
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding: 1% 0.2% 1% 0.2%;
+        
+        
         background-color: map-get($map: $colores, $key: main);
         /* mapa */
         gap: 2px;
@@ -252,6 +303,77 @@
     #g12 {
         grid-area: g12;
     }
+    #pedidos{
+        width: 35%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        background-color: rgba(255, 255, 255, 0.304);
+        border-radius: 3%;
+    }
+    #main_pedidos{
+        display: flex;
+        justify-content: center;
+    }
+    #formulario{
+        display: grid;
+        grid-template-areas: 
+        "nombre apellido"
+        "email email"
+        "ciudad pais"
+        "dibujo dibujo";
+    }
+    #nombre{grid-area: nombre;width: 100%;}
+    #apellido{grid-area: apellido;width: 100%}
+    #email{grid-area: email;width: 100%}
+    #ciudad{grid-area: ciudad;width: 100%}
+    #pais{grid-area: pais;width: 100%}
+    #dibujo{grid-area: dibujo;display: flex;flex-direction: column; align-items: center; width: 100%;}
+    #boton{display: flex;justify-content: center;}
+    #enviar{display: flex;justify-content: center;}
+
+    #main_contacto{
+        display: flex;
+        justify-content: center;
+        height: 15%;
+    }
+    #contacto{
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.304);
+        border-radius: 3%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boton_contacto{
+        padding-bottom: 2%;
+    }
+    #exampleFormControlTextarea1{
+        height: 150px;
+    }
+    #mensaje{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #email_contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #terminos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    #terminos2{
+        width: 262px;
+        padding-bottom: 2%;
+    }
 }
 /* media query desktop */
 @media screen and (min-width:1200px) {
@@ -263,7 +385,7 @@
             "g9 g10 g11 g12";
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        padding-top: 5%;
+        padding-top: 1%;
     }
     /* agrega animacion que al pasar el cursor por encima aparece el titulo d elas imagenes en la galeria */
     .overlayMio {
@@ -287,34 +409,6 @@
         max-width: 500px;
     }
     #pedidos{
-        width: 27%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2%;
-        padding-bottom: 1%;
-        background-color: rgba(255, 255, 255, 0.304);
-        border-radius: 3%;
+        width: 30%;
     }
-    #main_pedidos{
-        display: flex;
-        justify-content: center;
-    }
-    #formulario{
-        display: grid;
-        grid-template-areas: 
-        "nombre apellido"
-        "email email"
-        "ciudad pais"
-        "dibujo dibujo";
-    }
-    #nombre{grid-area: nombre;width: auto;}
-    #apellido{grid-area: apellido;width: auto}
-    #email{grid-area: email;width: auto}
-    #ciudad{grid-area: ciudad;width: auto}
-    #pais{grid-area: pais;width: auto}
-    #dibujo{grid-area: dibujo;display: flex;flex-direction: column; align-items: center;}
-    #boton{display: flex;justify-content: center;}
-    #enviar{display: flex;justify-content: center;}
 }

@@ -70,8 +70,17 @@ h3 {
 /* le agruga al formulario de pedidos un padding para separarlo de la nav bar */
 #formulario{
     padding-top: 1%;
+    width: 100%;
 }
-main section label h2{
-    padding-bottom: 5%;
-    padding-top: 5%;
+
+main{
+    section{
+        label{ 
+            h2{
+                padding-bottom: 5%;
+                padding-top: 5%;
+            }
+        }
+    }
 }
+
