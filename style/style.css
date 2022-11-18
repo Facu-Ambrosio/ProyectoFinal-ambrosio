@@ -123,7 +123,7 @@
   #enviar {
     margin-top: 1%;
     text-align: center;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
   }
   #boton {
     display: flex;
@@ -336,6 +336,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #boton_contacto {
+    margin-bottom: 1%;
   }
   #exampleFormControlTextarea1 {
     height: 150px;
