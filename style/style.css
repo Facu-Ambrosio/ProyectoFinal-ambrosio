@@ -94,6 +94,7 @@
   .imagen_descripcion {
     max-width: 320px;
   }
+  /* disposicio de las redes en el footer */
   #redes {
     display: flex;
     flex-direction: row;
@@ -110,28 +111,97 @@
   #redes #red2 {
     width: 40px;
   }
+  /* disposicion del formulario de pedidos */
   #pedidos {
     display: flex;
+    width: 90%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.304);
+    border-radius: 3%;
   }
-  #dibujo {
+  #pedidos #formulario div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #enviar {
-    margin-top: 1%;
-    text-align: center;
-    margin-bottom: 1%;
+  #main_pedidos {
+    display: flex;
+    justify-content: center;
+  }
+  #formulario {
+    display: grid;
+    grid-template-areas: "nombre apellido" "email email" "ciudad pais" "dibujo dibujo";
+    grid-template-columns: 1fr 1fr;
+  }
+  #nombre {
+    grid-area: nombre;
+    width: 100%;
+  }
+  #apellido {
+    grid-area: apellido;
+    width: 100%;
+  }
+  #email {
+    grid-area: email;
+    width: 100%;
+  }
+  #ciudad {
+    grid-area: ciudad;
+    width: 100%;
+  }
+  #pais {
+    grid-area: pais;
+    width: 100%;
+  }
+  #selector {
+    width: 100%;
+  }
+  #dibujo {
+    grid-area: dibujo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   #boton {
     display: flex;
     flex-direction: row;
+    margin-top: 1%;
+    justify-content: center;
+  }
+  #enviar {
+    display: flex;
     justify-content: center;
     margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
   }
+  #main_contacto {
+    display: flex;
+    justify-content: center;
+    height: 15%;
+  }
+  /* disposicion del formulario de contacto */
   #contacto {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.304);
+    border-radius: 3%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #boton_contacto {
+    margin-bottom: 1%;
+  }
+  #exampleFormControlTextarea1 {
+    height: 150px;
+  }
+  #mensaje {
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,15 +210,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%;
   }
-  #mensaje {
-    width: 90%;
+  #terminos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
-  #boton_contacto {
-    margin-top: 2%;
+  #terminos2 {
+    width: 262px;
+  }
+  #exampleFormControlInput1 {
+    width: 60%;
+  }
+}
+/* media query que cambia el ancho del selector de dibujos */
+@media screen and (min-width: 379px) {
+  #selector {
+    width: 325px;
   }
 }
 /* media query que le agrega color de fondo a los botones de la nav bar, y cambia el tamaño de los iconos de las redes sociales para que no parezcan tan grandes al cambiar de tamaño d epantalla */
@@ -159,6 +239,12 @@
   }
   body header nav div div ul {
     gap: 25px;
+  }
+  #pedidos {
+    width: 35%;
+  }
+  #contacto {
+    width: 50%;
   }
 }
 /* media query tablet horizontal */
@@ -271,98 +357,6 @@
   #g12 {
     grid-area: g12;
   }
-  #pedidos {
-    width: 35%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    background-color: rgba(255, 255, 255, 0.304);
-    border-radius: 3%;
-  }
-  #main_pedidos {
-    display: flex;
-    justify-content: center;
-  }
-  #formulario {
-    display: grid;
-    grid-template-areas: "nombre apellido" "email email" "ciudad pais" "dibujo dibujo";
-  }
-  #nombre {
-    grid-area: nombre;
-    width: 100%;
-  }
-  #apellido {
-    grid-area: apellido;
-    width: 100%;
-  }
-  #email {
-    grid-area: email;
-    width: 100%;
-  }
-  #ciudad {
-    grid-area: ciudad;
-    width: 100%;
-  }
-  #pais {
-    grid-area: pais;
-    width: 100%;
-  }
-  #dibujo {
-    grid-area: dibujo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  #boton {
-    display: flex;
-    justify-content: center;
-  }
-  #enviar {
-    display: flex;
-    justify-content: center;
-  }
-  #main_contacto {
-    display: flex;
-    justify-content: center;
-    height: 15%;
-  }
-  #contacto {
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.304);
-    border-radius: 3%;
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #boton_contacto {
-    margin-bottom: 1%;
-  }
-  #exampleFormControlTextarea1 {
-    height: 150px;
-  }
-  #mensaje {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #email_contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #terminos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  #terminos2 {
-    width: 262px;
-  }
 }
 /* media query desktop */
 @media screen and (min-width: 1200px) {
@@ -393,9 +387,6 @@
   /* le cambia el tamaño a la foto de la descripcion */
   .imagen_descripcion {
     max-width: 500px;
-  }
-  #pedidos {
-    width: 30%;
   }
 }
 /* modifica el tamaño del logo */
@@ -428,11 +419,6 @@ body header nav div #navbarNav ul li a h5 {
 /* saca el margin bottom que viene por defecto en las etiquetas h de bootstrap*/
 h3 {
   margin-bottom: 0;
-}
-
-/* cambia el ancho de formularios en la seccion de pedidos */
-#selector {
-  width: 325px;
 }
 
 /* cambia el ancho de formularios en la seccion de pedidos*/
